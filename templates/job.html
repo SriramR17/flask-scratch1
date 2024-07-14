@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOB</title>
+</head>
+<body>
+<div class="row" >
+        <div class="col-4"><h4 style=" margin-bottom:4px">{{i['title']}}</h4>
+        <div><b>Location:</b> {{i['location']}}</div>
+       {%if 'salary' in i%}
+       <div><b>Salary:</b> {{i['salary']}}</div>
+       {%endif%}</div>
+       <div class="col-8">
+           <a href="mailto:sriram@MediEasy.in?subject=Application%20for%20{{i['title']}}&body=My%20name%3A%20%3Cyour%20name%3E%0D%0AMy%20Resume%20link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20link%3E" type="button" class="btn btn-primary align-middle">Apply</a>
+       </div>
+
+
+
+    </div>
+
+</body>
+</html>
